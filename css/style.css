@@ -469,11 +469,11 @@ p {
 }
 
 #fh5co-sayings {
-  padding: 7em 0;
+  padding: 2em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-sayings {
-    padding: 5em 0;
+    padding: 2em 0;
   }
 }
 #fh5co-sayings .flexslider .slides li {
