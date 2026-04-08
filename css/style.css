@@ -340,7 +340,7 @@ p {
 }
 .fh5co-main-nav .fh5co-logo a {
   position: relative;
-  top: -5px;
+  top: 5px;
   display: inline-block;
 }
 .fh5co-main-nav .fh5co-menu-2 {
@@ -1431,9 +1431,110 @@ p {
 }
 
 .about-link:hover {
-  background: #7ED957;
+  background: #fb6e14;
   color: white;
-  border-color: #7ED957;
+  border-color: #fb6e14;
+}
+
+.about-link-bright {
+  color: #130a049e;
+}
+.stanky-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stanok {
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stanok::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #fb6e14;
+  opacity: 0.8;
+}
+
+.stanok:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.stanok h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.stanok a {
+  font-size: 14px;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.program-item {
+  background: linear-gradient(135deg, #ffffff, #f4fff0);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #e6f5e1;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.program-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #fb6e14;
+}
+
+.program-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.program-item h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.program-item p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.program-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.speaker {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  color: #06230c;
+  margin-bottom: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

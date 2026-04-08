@@ -109,7 +109,7 @@
 			<div class="fh5co-main-nav">
 				<div class="container-fluid">
 					<div class="fh5co-menu-1">
-					    <a href="#" data-nav-section="home">Domov</a>
+					    <a href="#" data-nav-section="home"><i class="icon-home"></i></a>
 					    <a href="#" data-nav-section="about">O festivale</a>
 					    <a href="#" data-nav-section="program">Program</a>
 						<a href="#" data-nav-section="stanky">Stánky</a>
@@ -201,8 +201,25 @@
 			  </div>
 			</div>
 			<div class="row row-padded">
-			  <div class="col-md-12">
-				<h3>Info doplníme čoskoro</h3>
+			  <div class="col-md-12 program-grid">
+    			<div class="program-item">
+    			  <h3>🎭 Divadielko Maťo</h3>
+    			  <p>Divadlo pre deti</p>
+    			  <div class="program-links">
+    			    <a href="http://divadielkomato.sk" target="_blank" class="about-link about-link-bright">
+    			      <i class="icon-globe"></i> Web
+    			    </a>
+    			    <a href="https://www.instagram.com/divadielkomato" target="_blank" class="about-link about-link-bright">
+    			      <i class="icon-instagram"></i> Instagram
+    			    </a>
+    			  </div>
+    			</div>
+    			<div class="program-item">
+    			  <h3>🥗 Deti, výživa a šport</h3>
+    			  <p><span class="speaker">🎤 M.A. Zuzana Chochlík Laslopová</span><br>
+    			    Podpredsedníčka Slovenskej vegánskej spoločnosti, výživová poradkyňa a koordinátorka pre Zelenú jedáleň
+    			  </p>
+    			</div>
 			  </div>
 			</div>
 		  </div>
@@ -219,8 +236,31 @@
 			  </div>
 			</div>
 			<div class="row row-padded">
-			  <div class="col-md-12">
-				<h3>Info doplníme čoskoro</h3>
+			  <div class="col-md-12 stanky-grid">
+				<div class="stanok">
+				  <h3>🌱 Slovenská vegánska spoločnosť o.z.</h3>
+				</div>
+				<div class="stanok">
+				  <h3>🧵 Ethicfiber s.r.o.</h3>
+				    <a href="https://ethicfiber.com/sk/pages/kontakt" target="_blank" class="about-link about-link-bright" >
+				      <i class="icon-globe"></i> Web
+				    </a>
+				</div>
+				<div class="stanok">
+				  <h3>🍰 U sestry o.z.</h3>
+				</div>
+				<div class="stanok">
+				  <h3>🐶 OZ Útulok Skalica</h3>
+				    <a href="https://www.facebook.com/share/1CNJQQj1Ly/" target="_blank" class="about-link about-link-bright" >
+				      <i class="icon-facebook"></i> Facebook
+				    </a>
+				</div>
+				<div class="stanok">
+				  <h3>🍎 Ovocinár Hrehor s.r.o.</h3>
+				    <a href="https://ovocinarhrehor.sk/" target="_blank" class="about-link about-link-bright" >
+				      <i class="icon-globe"></i> Web
+				    </a>
+			    </div>
 			  </div>
 			</div>
 		  </div>
@@ -338,23 +378,34 @@
 					</div>
 					<div class="col-md-6 to-animate-2">
 						<h3>Kontaktný formular</h3>
-						<div class="form-group ">
-							<label for="name" class="sr-only">Name</label>
-							<input id="name" class="form-control" placeholder="Meno" type="text">
-						</div>
-						<div class="form-group ">
-							<label for="email" class="sr-only">Email</label>
-							<input id="email" class="form-control" placeholder="Email" type="email">
-						</div>
-							
-						<div class="form-group ">
-							<label for="message" class="sr-only">Message</label>
-							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Sprava"></textarea>
-						</div>
-						<div class="form-group ">
-							<input class="btn btn-primary" value="Odoslat" type="submit">
-						</div>
-						</div>
+						<form action="https://formly.email/submit" method="POST">
+						  <!-- Access key -->
+						  <input type="hidden" name="access_key" value="aeebd4d89f4f49c78fff918b7a1dd238">
+						
+						  <!-- Name field -->
+						  <div class="form-group">
+						    <label for="name" class="sr-only">Meno</label>
+						    <input id="name" class="form-control" name="name" placeholder="Meno" type="text" required>
+						  </div>
+					  
+						  <!-- Email field -->
+						  <div class="form-group">
+						    <label for="email" class="sr-only">Email</label>
+						    <input id="email" class="form-control" name="email" placeholder="Email" type="email" required>
+						  </div>
+					  
+						  <!-- Message field -->
+						  <div class="form-group">
+						    <label for="message" class="sr-only">Správa</label>
+						    <textarea id="message" class="form-control" name="message" cols="30" rows="5" placeholder="Správa" required></textarea>
+						  </div>
+					  
+						  <!-- Submit button -->
+						  <div class="form-group">
+						    <input class="btn btn-primary" type="submit" value="Odoslať">
+						  </div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
